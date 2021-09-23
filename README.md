@@ -1,4 +1,4 @@
-### 👋 Hola, soy @Natalio Rabasco.
+### 👋 Hola, soy Natalio Rabasco.
 
 Algunos datos sobre mi:
 
