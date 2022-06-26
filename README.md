@@ -1,6 +1,6 @@
 <p align="center">
    <img align="center" src="https://media-exp1.licdn.com/dms/image/C4D16AQFNqCuy942phw/profile-displaybackgroundimage-shrink_350_1400/0/1646814747851?e=1661990400&v=beta&t=mX4T_Uk9ZyoqddywcO0RCMSZmbjOGU8I4doxtvS0qYA" />
-   <h3 align="center">¡Hey 👋! Soy Natalio Rabasco 👨🏻‍💻</h3>
+   <h2 align="center">¡Hey 👋! Soy Natalio Rabasco 👨🏼‍💻</h2>
 </p>
 
 <p align="center">Soy <strong>Desarrollador Web Front-End</strong> con 5 años de experiencia.<br />¡Sígueme para más 👇!</p>
@@ -13,7 +13,6 @@
   </a>
 </p>
 
-# 👋 Hola, soy Natalio Rabasco.
 ### Algunos datos sobre mi:
 
 - 👀 Interesado en el mundo de la informática, concretamente en la rama de la programación y el diseño web. Aunque toco de todo un poco lo relacionado con la informática.
