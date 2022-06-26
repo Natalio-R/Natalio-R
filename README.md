@@ -1,3 +1,17 @@
+<p align="center">
+   <img align="center" src="https://media-exp1.licdn.com/dms/image/C4D16AQFNqCuy942phw/profile-displaybackgroundimage-shrink_350_1400/0/1646814747851?e=1661990400&v=beta&t=mX4T_Uk9ZyoqddywcO0RCMSZmbjOGU8I4doxtvS0qYA" />
+   <h3 align="center">¡Hey 👋! Soy Natalio Rabasco 👨🏻‍💻</h3>
+</p>
+
+<p align="center">Soy <strong>Desarrollador Web Front-End</strong> con 5 años de experiencia.<br />¡Sígueme para más 👇!</p>
+<p align="center">
+  <a href="https://instagram.com/natalio_lp target="blank">
+    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="natalio_lp" height="28px" width="28px" />
+  </a>
+  <a href="https://twitter.com/NatalioRabasco" target="blank">
+    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="NatalioRabasco" height="28px" width="28px" />
+  </a>
+</p>
 
 # 👋 Hola, soy Natalio Rabasco.
 ### Algunos datos sobre mi:
