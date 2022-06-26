@@ -21,8 +21,10 @@ Claro, me encanta la programación y el diseño gráfico. Es uno de mis hobbies 
 Si estás interesado en programar juntos o solo quieres aportar ideas siempre estás invitado a hacerlo sin problemas, estaré encantaddo de poder hablar contigo y poder desarrollar juntos ideas increíbles. Para ello no dudes en ponerte en contacto conmigo a través de mi correo nataliorabasconavarro@gmail.com o por mis redes como Instagram [@natalio_lp](https://instagram.com/natalio_lp) o por Twitter [@NatalioRabasco](https://twitter.com/NatalioRabasco).
 
 ## Stats
-[![Natalio R GitHub stats](https://github-readme-stats.vercel.app/api?username=Natalio-R)](https://github.com/Natalio-R/github-readme-stats)
+[![Natalio R GitHub stats](https://github-readme-stats.vercel.app/api?username=Natalio-R&show_icons=true)](https://github.com/Natalio-R/github-readme-stats)
 
+## Top Lenguajes
+[![Top Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=Natalio-R&layout=compact)](https://github.com/Natalio-R/github-readme-stats)
 
 
 ```bash
