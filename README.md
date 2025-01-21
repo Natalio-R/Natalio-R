@@ -4,13 +4,12 @@
 
 [![N|Portfolio](https://camo.githubusercontent.com/30ac25b97ea34a4f820d01ca7433204f13b5a218d8fc947deef6464d237d8e39/687474703a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d776974682d6c6f76652e737667)](https://www.nataliorabasco.com)
 
-Soy un **desarrollador web** con admiración por el **diseño gráfico**.
+Soy un **desarrollador web** con admiración por el **diseño gráfico** además de un joven emprendedor.
 <br />
 Sígueme en mis redes sociales para saber más.
 
 [Portfolio](https://nataliorabasco.com) •
 [Instagram](https://instagram.com/natalio_lp) •
-[Twitter](https://twitter.com/NatalioRabasco) •
 [LinkedIn](https://linkedin.com/in/NatalioRabasco)
 
 ⭐ Déjame una estrella en GitHub — me motivaría!
@@ -20,20 +19,21 @@ Sígueme en mis redes sociales para saber más.
 ### Algunos datos sobre mi:
 
 - 👀 Interesado en el mundo de la informática, concretamente en la rama de la programación y el diseño web. Aunque toco de todo un poco lo relacionado con la informática.
-- 🌱 Actualmente estoy estudiando un Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web y trabajando como desarrollador Web.
-- 💞️ Estoy abierto en colaborar en proyectos de programación que no sean muy complejos, ya que así mejoraría mis dotes como programador.
-- 📫 Si quieres contactar conmigo puedes hacerlo a través de cualquiera de mis redes sociales o por correo a info@nataliorabasco.com
+- 🌱 Actualmente tengo junto a un socio, mi propia agencia de desarrollo web y marketing digital: [![Fractal Agency](https://fractalagency.es)].
+- 💞️ Estoy abierto en colaborar en proyectos de programación, ya que así mejoraría mis dotes como programador.
+- 📫 Si quieres contactar conmigo puedes hacerlo a través de cualquiera de mis redes sociales o por correo a nataliorabasconavarro@gmail.com
 
 
 ## ¿Qué estudio?
-Terminé un ciclo formativo de grado medio en Sistemas Microinformáticos y Redes que lo cursé durante 2 años. Luego, al terminarlo, decidí meterme en un ciclo formativo de grado superior en Desarrollo de Aplicaciones Web el cual estoy cursado aún.
+Terminé un ciclo formativo de grado medio en Sistemas Microinformáticos y Redes que lo cursé durante 2 años. Luego, al terminarlo, decidí meterme en un ciclo formativo de grado superior en Desarrollo de Aplicaciones Web.
 
 ## ¿Donde trabajo o he trabajado?
-A pesar de estar estudiando también he trabajado como desarrollador Web en una empresa de informática creando y manteniendo su tienda online [movileuropa.com](https://movileuropa.com), en la cual he dedicado más de 2 años. Además de llevar la web, también he llevado el tema del marketing digital (creación de anuncios y flyers informativos).
-Actualmente estoy trabajdo fuera de mi país(España) como diseñador gráfico en una empresa situdada en Malta.
+A pesar de estar estudiando también he trabajado como desarrollador Web en una empresa de informática creando y manteniendo su tienda online, en la cual he dedicado más de 2 años. Además de llevar la web, también he llevado el tema del marketing digital (creación de anuncios y flyers informativos).
+Mi vida se volvió muy monotona y aburrida por lo que decidí dar el paso, dejarlo todo atrás e irme a trabajar unos meses fuera de mi país(España) como diseñador gráfico en una empresa situada en Malta.
+Tras volver, entré en una empresa internacional de desarrollo web, en la cual sigo trabajando después de 2 años.
 
 ## ¿Tengo algún hobbie?
-Claro, me encanta la programación y el diseño gráfico. Es uno de mis hobbies favoritos aunque tengo varios más; este es el que más tiempo dedico ya que mi vida se basa en eso  y me paso el día programando una cosa u otra. Además, siempre estoy creando ideas que me surgen y dándole vida. Todos los proyectos que creo que podrían aportar algo a la comunidad de programadores los subo a mis redes principales como GitHub o Codepen.
+Claro, me encanta la programación y el diseño gráfico. Es uno de mis hobbies favoritos aunque tengo varios más; este es el que más tiempo dedico ya que mi vida se basa en eso  y me paso el día programando una cosa u otra. Además, siempre estoy creando ideas que me surgen y dándole vida. Todos los proyectos que creo que podrían aportar algo a la comunidad de programadores los subo a mis redes principales como GitHub.
 
 ## Colaboraciones
 Si estás interesado en programar juntos o solo quieres aportar ideas siempre estás invitado a hacerlo sin problemas, estaré encantado de poder hablar contigo y poder desarrollar juntos ideas increíbles. Para ello no dudes en ponerte en contacto conmigo a través de mi correo info@nataliorabasco.com o por mis redes sociales como Instagram o por Twitter.
