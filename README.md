@@ -2,7 +2,7 @@
 
 # 👋 Soy Natalio Rabasco
 
-[![N|Portfolio](https://camo.githubusercontent.com/30ac25b97ea34a4f820d01ca7433204f13b5a218d8fc947deef6464d237d8e39/687474703a2f2f666f7274686562616467652e636f6d2f696d616765732f6261646765732f6275696c742d776974682d6c6f76652e737667)](https://www.nataliorabasco.com)
+[![Página web](https://nataliorabasco.com/static/media/profile.52c2f59e1a75eb22d108.png)](https://www.nataliorabasco.com)
 
 Soy un **desarrollador web** con admiración por el **diseño gráfico** además de un joven emprendedor.
 <br />
@@ -19,7 +19,7 @@ Sígueme en mis redes sociales para saber más.
 ### Algunos datos sobre mi:
 
 - 👀 Interesado en el mundo de la informática, concretamente en la rama de la programación y el diseño web. Aunque toco de todo un poco lo relacionado con la informática.
-- 🌱 Actualmente tengo junto a un socio, mi propia agencia de desarrollo web y marketing digital: [![Fractal Agency](https://fractalagency.es)].
+- 🌱 Actualmente tengo junto a un socio, mi propia agencia de desarrollo web y marketing digital: ![Fractal Agency](https://fractalagency.es).
 - 💞️ Estoy abierto en colaborar en proyectos de programación, ya que así mejoraría mis dotes como programador.
 - 📫 Si quieres contactar conmigo puedes hacerlo a través de cualquiera de mis redes sociales o por correo a nataliorabasconavarro@gmail.com
 
