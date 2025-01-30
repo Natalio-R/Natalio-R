@@ -2,13 +2,11 @@
 
 # 👋 Soy Natalio Rabasco
 
-[![Página web](https://nataliorabasco.com/static/media/profile.52c2f59e1a75eb22d108.png)](https://www.nataliorabasco.com)
-
 Soy un **desarrollador web** con admiración por el **diseño gráfico** además de un joven emprendedor.
 <br />
 Sígueme en mis redes sociales para saber más.
 
-[Portfolio](https://nataliorabasco.com) •
+[Web personal](https://nataliorabasco.com) •
 [Instagram](https://instagram.com/natalio_lp) •
 [LinkedIn](https://linkedin.com/in/NatalioRabasco)
 
@@ -19,7 +17,7 @@ Sígueme en mis redes sociales para saber más.
 ### Algunos datos sobre mi:
 
 - 👀 Interesado en el mundo de la informática, concretamente en la rama de la programación y el diseño web. Aunque toco de todo un poco lo relacionado con la informática.
-- 🌱 Actualmente tengo junto a un socio, mi propia agencia de desarrollo web y marketing digital: ![Fractal Agency](https://fractalagency.es).
+- 🌱 Actualmente tengo junto a un socio, mi propia agencia de desarrollo web y marketing digital: [Fractal Agency](https://fractalagency.es).
 - 💞️ Estoy abierto en colaborar en proyectos de programación, ya que así mejoraría mis dotes como programador.
 - 📫 Si quieres contactar conmigo puedes hacerlo a través de cualquiera de mis redes sociales o por correo a nataliorabasconavarro@gmail.com
 
@@ -36,7 +34,7 @@ Tras volver, entré en una empresa internacional de desarrollo web, en la cual s
 Claro, me encanta la programación y el diseño gráfico. Es uno de mis hobbies favoritos aunque tengo varios más; este es el que más tiempo dedico ya que mi vida se basa en eso  y me paso el día programando una cosa u otra. Además, siempre estoy creando ideas que me surgen y dándole vida. Todos los proyectos que creo que podrían aportar algo a la comunidad de programadores los subo a mis redes principales como GitHub.
 
 ## Colaboraciones
-Si estás interesado en programar juntos o solo quieres aportar ideas siempre estás invitado a hacerlo sin problemas, estaré encantado de poder hablar contigo y poder desarrollar juntos ideas increíbles. Para ello no dudes en ponerte en contacto conmigo a través de mi correo info@nataliorabasco.com o por mis redes sociales como Instagram o por Twitter.
+Si estás interesado en programar juntos o solo quieres aportar ideas siempre estás invitado a hacerlo sin problemas, estaré encantado de poder hablar contigo y poder desarrollar juntos ideas increíbles. Para ello no dudes en ponerte en contacto conmigo a través de mi correo nataliorabasconavarro@gmail.com o por mis redes sociales como Instagram, X o Linkedin.
 
 ## Stats
 [![Natalio R GitHub stats](https://github-readme-stats.vercel.app/api?username=Natalio-R&show_icons=true)](https://github.com/Natalio-R/github-readme-stats)
