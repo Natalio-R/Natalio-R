@@ -21,6 +21,23 @@
   </a>
 </p>
 
+<div align="center">
+
+<h3><code>natalio@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" alt="Gráfico de contribuciones" />
+
+<br><br>
+
+<h3><code>natalio@github ~ $ whoami</code></h3>
+<table>
+  <tr>
+    <td valign="top"><img src="./natalio-ascii.svg" width="370" alt="Retrato ASCII" /></td>
+    <td valign="top"><img src="./info-card.svg" width="490" alt="Info card" /></td>
+  </tr>
+</table>
+
+</div>
+
 ---
 
 ## 👨‍💻 Sobre mí
@@ -75,12 +92,6 @@
 - Implementación de ecosistema de marketing: Email marketing, Facebook Ads, Google Ads y sincronización de catálogos en RRSS, logrando un aumento directo en ventas y fidelización.
 
 ---
-
-## 📊 Mis Estadísticas en GitHub
-
-<div align="center">
-  <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=Natalio-R&hide_border=true&border_radius=12&locale=es&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" /></a>
-</div>
 
 <p align="center">
   <i>"El código es mi herramienta; aportar valor real, mi objetivo."</i>

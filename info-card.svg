@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="370" viewBox="0 0 490 370">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:12.5px;fill:#c9d1d9}.l{opacity:0;animation:in .45s ease-out both}@keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}</style>
+<rect x=".5" y=".5" width="489" height="369" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M.5 30V10.5a10 10 0 0 1 10-10h469a10 10 0 0 1 10 10V30z" fill="#161b22" stroke="#30363d"/>
+<circle cx="18" cy="15.0" r="5.5" fill="#ff5f56"/><circle cx="36" cy="15.0" r="5.5" fill="#ffbd2e"/><circle cx="54" cy="15.0" r="5.5" fill="#27c93f"/>
+<text x="245.0" y="19.0" text-anchor="middle" style="fill:#8b949e;font-size:11px">natalio@github: ~ $ neofetch</text>
+<text class="l" x="20" y="62" xml:space="preserve" style="animation-delay:0.25s"><tspan fill="#69f0a0" font-weight="bold">natalio@github</tspan></text>
+<text class="l" x="20" y="82" xml:space="preserve" style="animation-delay:0.37s"><tspan fill="#8b949e">--------------</tspan></text>
+<text class="l" x="20" y="100" xml:space="preserve" style="animation-delay:0.49s"><tspan fill="#39d353" font-weight="bold">Ahora:      </tspan><tspan fill="#c9d1d9">NTT Data (BBVA) · Big Data, IA y Frontend</tspan></text>
+<text class="l" x="20" y="120" xml:space="preserve" style="animation-delay:0.61s"><tspan fill="#39d353" font-weight="bold">Founder:    </tspan><tspan fill="#c9d1d9">Cofundador de Fractal Agency</tspan></text>
+<text class="l" x="20" y="138" xml:space="preserve" style="animation-delay:0.73s"><tspan fill="#39d353" font-weight="bold">Antes:      </tspan><tspan fill="#c9d1d9">SALTWAVE (Malta) · Web Dev &amp; Digital Mgr</tspan></text>
+<text class="l" x="20" y="158" xml:space="preserve" style="animation-delay:0.85s"><tspan fill="#39d353" font-weight="bold">            </tspan><tspan fill="#c9d1d9">Movil Europa · Full Stack E-commerce</tspan></text>
+<text class="l" x="20" y="176" xml:space="preserve" style="animation-delay:0.97s"><tspan fill="#39d353" font-weight="bold">Stack:      </tspan><tspan fill="#c9d1d9">JavaScript, React, HTML5, CSS3, WordPress</tspan></text>
+<text class="l" x="20" y="196" xml:space="preserve" style="animation-delay:1.09s"><tspan fill="#39d353" font-weight="bold">Data/IA:    </tspan><tspan fill="#c9d1d9">Big Data, IA, automatizaciones</tspan></text>
+<text class="l" x="20" y="214" xml:space="preserve" style="animation-delay:1.21s"><tspan fill="#39d353" font-weight="bold">Marketing:  </tspan><tspan fill="#c9d1d9">Google Ads, Facebook Ads, Email marketing</tspan></text>
+<text class="l" x="20" y="234" xml:space="preserve" style="animation-delay:1.33s"><tspan fill="#39d353" font-weight="bold">Ubicación:  </tspan><tspan fill="#c9d1d9">Alicante, España (remoto)</tspan></text>
+<text class="l" x="20" y="252" xml:space="preserve" style="animation-delay:1.45s"><tspan fill="#39d353" font-weight="bold">Idiomas:    </tspan><tspan fill="#c9d1d9">Español (nativo) · Inglés (B1)</tspan></text>
+<text class="l" x="20" y="272" xml:space="preserve" style="animation-delay:1.57s"><tspan fill="#39d353" font-weight="bold">Highlights: </tspan><tspan fill="#c9d1d9">+8 años transformando curiosidad en código</tspan></text>
+<text class="l" x="20" y="290" xml:space="preserve" style="animation-delay:1.69s"><tspan fill="#39d353" font-weight="bold">            </tspan><tspan fill="#c9d1d9">E-commerce de cero: pagos y logística 24-48h</tspan></text>
+<text class="l" x="20" y="310" xml:space="preserve" style="animation-delay:1.81s"><tspan fill="#39d353" font-weight="bold">            </tspan><tspan fill="#c9d1d9">Side-projects SaaS con nuevas tecnologías</tspan></text>
+<text class="l" x="20" y="328" xml:space="preserve" style="animation-delay:1.93s"></text>
+<text class="l" x="20" y="348" xml:space="preserve" style="animation-delay:2.05s"><tspan fill="#161b22">███</tspan><tspan fill="#0e4429">███</tspan><tspan fill="#006d32">███</tspan><tspan fill="#26a641">███</tspan><tspan fill="#39d353">███</tspan><tspan fill="#69f0a0">███</tspan></text>
+</svg>

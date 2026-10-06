@@ -1,0 +1,6 @@
+# Solo en local, para regenerar el retrato ASCII (no lo usa el workflow diario)
+-r requirements.txt
+pillow
+numpy
+opencv-python
+rembg[cpu]
