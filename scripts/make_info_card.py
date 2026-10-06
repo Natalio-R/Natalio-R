@@ -1,9 +1,19 @@
-"""Neofetch-style info card -> info-card.svg. STATIC=1 emits a frozen frame."""
+"""Neofetch-style info card in a macOS window -> info-card.svg. STATIC=1 emits a frozen frame.
+
+Reads data/contributions.json (if present) for the live GitHub rows, so the daily
+workflow regenerates it alongside the heatmap.
+"""
+import json
 import os
 import textwrap
+from datetime import date
 from html import escape
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "info-card.svg")
+from window import BAR, DIM, FG, GREEN, MONTHS, NEON, PALETTE, W, window
+
+ROOT = os.path.join(os.path.dirname(__file__), "..")
+OUT = os.path.join(ROOT, "info-card.svg")
+DATA = os.path.join(ROOT, "data", "contributions.json")
 STATIC = os.environ.get("STATIC") == "1"
 
 USER_HOST = "natalio@github"
@@ -22,52 +32,103 @@ ROWS = [
     ("", "Side-projects SaaS con nuevas tecnologías"),
 ]
 
-W = 490
-FONT = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
-BG, BORDER, BAR, FG, DIM = "#0d1117", "#30363d", "#161b22", "#c9d1d9", "#8b949e"
-KEY, ACCENT = "#39d353", "#69f0a0"
-FS, LH, PAD, BAR_H = 12.5, 19, 20, 30
-KEY_COLS, VAL_COLS = 12, 45  # ~7.5px per char at 12.5px
+FS, LH, PAD = 21, 31.5, 28
+CW = FS * 0.6
+KEY_COLS, VAL_COLS = 12, 45
+BARS_H = 64  # altura del mini gráfico mensual
 
 
-def lines():
-    yield f'<tspan fill="{ACCENT}" font-weight="bold">{USER_HOST}</tspan>'
-    yield f'<tspan fill="{DIM}">{"-" * len(USER_HOST)}</tspan>'
-    for key, val in ROWS:
-        for i, chunk in enumerate(textwrap.wrap(val, VAL_COLS)):
-            k = f"{key}:" if key and i == 0 else ""
-            yield (f'<tspan fill="{KEY}" font-weight="bold">{escape(k.ljust(KEY_COLS))}</tspan>'
-                   f'<tspan fill="{FG}">{escape(chunk)}</tspan>')
-    yield ""
-    yield "".join(f'<tspan fill="{c}">███</tspan>' for c in
-                  ("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"))
+def fmt(n):
+    return f"{n:,}".replace(",", ".")
+
+
+def dias(n):
+    return f"{n} día" if n == 1 else f"{n} días"
+
+
+def github_rows():
+    if not os.path.exists(DATA):
+        return []
+    with open(DATA, encoding="utf-8") as f:
+        d = json.load(f)
+    active = sum(1 for x in d["days"] if x["count"])
+    best = date.fromisoformat(d["best_day"]["date"])
+    return [
+        ("Contribs", f"{fmt(d['total'])} en el último año"),
+        ("Racha", f"{dias(d['current_streak'])} (máx. {d['longest_streak']})"),
+        ("Mejor día", f"{d['best_day']['count']} contribuciones ({best.day} {MONTHS[best.month - 1]})"),
+        ("Activo", f"{active} de {len(d['days'])} días ({round(100 * active / len(d['days']))}%)"),
+        ("Actividad", d["monthly"]),
+    ]
+
+
+def text_line(key, val):
+    for i, chunk in enumerate(textwrap.wrap(val, VAL_COLS)):
+        k = f"{key}:" if key and i == 0 else ""
+        yield (f'<tspan fill="{GREEN}" font-weight="bold">{escape(k.ljust(KEY_COLS))}</tspan>'
+               f'<tspan fill="{FG}">{escape(chunk)}</tspan>')
+
+
+def bars(monthly, x, y, delay):
+    """Mini gráfico de barras por mes (rects, no glifos: no depende de la fuente)."""
+    items = sorted(monthly.items())[-13:]
+    top = max((v for _, v in items), default=0) or 1
+    step = (W - PAD - x) / len(items)
+    out = []
+    for i, (ym, v) in enumerate(items):
+        h = max(3, BARS_H * v / top)
+        color = NEON if v == top and v else PALETTE[2 + min(3, int(3 * v / top))] if v else PALETTE[0]
+        bx = x + i * step
+        base = y + BARS_H
+        grow = "" if STATIC else (
+            f'<animate attributeName="height" from="0" to="{h:.1f}" begin="{delay + i * 0.05:.2f}s" dur=".6s" fill="freeze"/>'
+            f'<animate attributeName="y" from="{base}" to="{base - h:.1f}" begin="{delay + i * 0.05:.2f}s" dur=".6s" fill="freeze"/>')
+        out.append(f'<rect x="{bx:.1f}" y="{base if grow else base - h:.1f}" width="{step * 0.7:.1f}" '
+                   f'height="{0 if grow else h:.1f}" rx="3" fill="{color}">{grow}</rect>'
+                   f'<text x="{bx + step * 0.35:.1f}" y="{y + BARS_H + 20}" font-size="14" fill="{DIM}" '
+                   f'text-anchor="middle">{MONTHS[int(ym[5:]) - 1][0].upper()}</text>')
+    return "".join(out)
 
 
 def main():
-    body = list(lines())
-    H = BAR_H + PAD + len(body) * LH + PAD - 4
-    rows = []
-    for i, content in enumerate(body):
-        y = BAR_H + PAD + i * LH + FS
-        style = "" if STATIC else f' style="animation-delay:{0.25 + i * 0.12:.2f}s"'
-        rows.append(f'<text class="l" x="{PAD}" y="{y:.0f}" xml:space="preserve"{style}>{content}</text>')
+    lines = [f'<tspan fill="{NEON}" font-weight="bold">{USER_HOST}</tspan>',
+             f'<tspan fill="{DIM}">{"-" * len(USER_HOST)}</tspan>']
+    for key, val in ROWS:
+        lines += text_line(key, val)
+    lines.append("")
+    for key, val in github_rows():
+        if isinstance(val, dict):
+            lines += [(key, val), "", "", ""]  # 3 líneas extra para las barras
+        else:
+            lines += text_line(key, val)
+
+    out, y = [], BAR + PAD + FS
+    for i, content in enumerate(lines):
+        delay = f' style="animation-delay:{0.3 + i * 0.09:.2f}s"' if not STATIC else ""
+        if isinstance(content, tuple):  # fila "Actividad": etiqueta + barras
+            key, monthly = content
+            out.append(f'<g class="l"{delay}><text x="{PAD}" y="{y:.0f}" xml:space="preserve">'
+                       f'<tspan fill="{GREEN}" font-weight="bold">{key}:</tspan></text>'
+                       f'{bars(monthly, PAD + KEY_COLS * CW, y - FS + 4, 0.3 + i * 0.09)}</g>')
+        elif content:
+            out.append(f'<text class="l" x="{PAD}" y="{y:.0f}" xml:space="preserve"{delay}>{content}</text>')
+        y += LH
+
+    # paleta de colores estilo neofetch
+    sw = 44
+    out.append(f'<g class="l" style="animation-delay:{0.3 + len(lines) * 0.09:.2f}s">' if not STATIC else "<g>")
+    out += [f'<rect x="{PAD + i * sw}" y="{y - FS:.0f}" width="{sw}" height="{FS + 4}" fill="{c}"/>'
+            for i, c in enumerate(PALETTE)]
+    out.append("</g>")
+
     anim = "" if STATIC else (
         ".l{opacity:0;animation:in .45s ease-out both}"
-        "@keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}")
-    dots = "".join(f'<circle cx="{18 + i * 18}" cy="{BAR_H / 2}" r="5.5" fill="{c}"/>'
-                   for i, c in enumerate(("#ff5f56", "#ffbd2e", "#27c93f")))
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
-<style>text{{font-family:{FONT};font-size:{FS}px;fill:{FG}}}{anim}</style>
-<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="{BG}" stroke="{BORDER}"/>
-<path d="M.5 {BAR_H}V10.5a10 10 0 0 1 10-10h{W - 21}a10 10 0 0 1 10 10V{BAR_H}z" fill="{BAR}" stroke="{BORDER}"/>
-{dots}
-<text x="{W / 2}" y="{BAR_H / 2 + 4}" text-anchor="middle" style="fill:{DIM};font-size:11px">{USER_HOST}: ~ $ neofetch</text>
-{chr(10).join(rows)}
-</svg>
-'''
+        "@keyframes in{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}")
+    body = f'<g font-size="{FS}" fill="{FG}">' + "\n".join(out) + "</g>"
+    svg = window(f"{USER_HOST}: ~$ neofetch", body, anim)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"-> {os.path.normpath(OUT)}")
+    print(f"-> {os.path.normpath(OUT)} (contenido hasta y={y:.0f})")
 
 
 if __name__ == "__main__":
