@@ -1,12 +1,12 @@
 {
  "user": "Natalio-R",
- "generated": "2026-11-25",
- "total": 478,
- "current_streak": 54,
- "longest_streak": 54,
+ "generated": "2026-11-26",
+ "total": 479,
+ "current_streak": 55,
+ "longest_streak": 55,
  "longest_streak_range": [
   "2026-10-02",
-  "2026-11-24"
+  "2026-11-25"
  ],
  "best_day": {
   "date": "2026-11-05",
@@ -25,7 +25,7 @@
   "2026-08": 14,
   "2026-09": 81,
   "2026-10": 116,
-  "2026-11": 210
+  "2026-11": 211
  },
  "days": [
   {
@@ -1865,6 +1865,11 @@
   },
   {
    "date": "2026-11-25",
+   "count": 1,
+   "level": 1
+  },
+  {
+   "date": "2026-11-26",
    "count": 0,
    "level": 0
   }
